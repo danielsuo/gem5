@@ -1,3 +1,13 @@
 name: gem5
+channels:
+  - defaults
+  - conda-forge
+  - anaconda
 dependencies:
   - python=2.7
+  - scons
+  - click
+  - pybind11
+  - pip
+  - pip:
+    - clickutil
