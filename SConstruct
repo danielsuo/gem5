@@ -389,6 +389,11 @@ if main['GCC'] or main['CLANG']:
     # want to allow (e.g., deprecation warnings).
     main.Append(CCFLAGS=['-Werror',
                          '-Wno-error=deprecated-declarations',
+                         '-Wno-error=deprecated-copy',
+                         '-Wno-error=pessimizing-move',
+                         '-Wno-error=address-of-packed-member',
+                         '-Wno-error=array-bounds',
+                         '-Wno-error=redundant-move',
                          '-Wno-error=deprecated',
                         ])
 else:
